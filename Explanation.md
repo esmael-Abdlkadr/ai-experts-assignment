@@ -5,7 +5,6 @@
 When `oauth2_token` is a dict instead of an `OAuth2Token`, the client skips the refresh and sends the request without an `Authorization` header.
 
 ## Why did it happen?
-
 The refresh check in `http_client.py` looked like this:
 
 ```python
